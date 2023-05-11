@@ -6,15 +6,7 @@ import questions, { answers } from '../database/data.js'
 export async function getQuestions(req, res){
     try {
         const q = await Questions.find();
-    
-        const questions =  q[0]
-        // let suffleQuestions = [];
-         
-        for(let i = 0; i < questions.length; i++) {
-            const element = questions[Math.random() * i];
-            questions.push(element)
-        }
-        res.json(q)
+       res.json(q)
     } catch (error) {
         res.json({ error })
     }
