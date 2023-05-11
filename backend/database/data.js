@@ -37,7 +37,7 @@ export default [
     },
     {
         id: 5,
-        question : "Which function is used to serialize an object into a JSON string?",
+        question : "Which function is used to serialize an object into a JSON slice?",
         options : [
             'stringify()',
             'parse()',
